@@ -1,0 +1,4 @@
+gymnasium
+geopy
+stable-baselines3[extra]
+torch
