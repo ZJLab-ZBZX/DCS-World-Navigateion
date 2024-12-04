@@ -25,13 +25,11 @@ class FeatureExtractor(BaseFeaturesExtractor):
     should depend more on relative bearing at greater distance (e.g. just turn to
     face the goal and fly straight.)
 
-    Relative height to the goal and raw altitude are normalized by the estimated 
-    flight ceiling of the F-16 (15000 meters).
 
     ### Velocities and angular rates
-    Velocities are left unchanged since mach, alpha, and beta are already pretty 
+    Velocities are left unchanged since mach, alpha are already pretty 
     well scaled. Angular rates are also left unchanged since they are unlikely to
-    grow too large in practice due to the low-level regulator on the JSBSim model.
+    grow too large in practice due to the low-level regulator.
 
     ### Angles
     All angles (attitude, relative bearing, alpha, beta) are converted to sine-
